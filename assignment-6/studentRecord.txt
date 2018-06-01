@@ -1,0 +1,68 @@
+p166006,Awais Ahmed Qarni,7,4,6,9
+p166130,Ali Hassan,3,8,A
+p166140,Umm E,5,8.3,6
+p176002,Dawar Khan,6,10,6
+p176005,Fatima Noor,6,10,6
+p176007,Mubariz Ahmed,5,8.3,6
+p176009,Ali Ghulam,5,8.3,6
+p176013,Danial Nadeem,6,10,6
+p176014,Mustafa Shah,2,3.3,5
+p176015,Muhammad Hassan,A,A,6
+p176020,Faizan Ahmad,6,10,6
+p176023,Jawad Hassan,6,10,4
+p176026,Fahad Jalal,6,10,3
+p176033,Ali Bokhary,A,A,6
+p176034,Salman Bashir,6,10,6
+p176038,Kosar Ahmad,6,10,6
+p176061,Haider Tamsil,A,A,5
+p176089,Muhammad,4,6.7,4
+p176093,Qasim Ahmad,6,10,5
+p176118,Nauman Ali,6,10,5
+p176125,Bilal Naseer,6,10,5
+p176128,Javeria Gulzar,A,A,6
+p176130,Arslan Falak,A,A,6
+p176134,Saad Hurrara,A,A,6
+p176137,Saad Hassan,6,10,6
+p176138,Zaid Adnan,6,10,5
+p176146,Shahwaiz Mehdi,A,A,6
+p176154,Muhammad Shahid Farooq,2,3.3,6
+p176173,Muhammad Shehroz Khan,A,A,A
+p176174,Muhammad Sabeeh Hanif,A,A,A
+p176052,Zunera Bukhari,6,10,6
+p176055,Uzair Faheem,6,10,4
+p176057,Nadia Abbas,6,10,3
+p176064,Hamza Arif,A,A,6
+p176065,Muhammad Ali,6,10,6
+p176067,CH. Hassan Shabbir Cheema,6,10,6
+p176069,Usama Bin,A,A,5
+p176072,AyeshaAziz,4,6.7,4
+p176083,Nazakat Ejaz,6,10,5
+p176084,Khadija Hayat,6,10,5
+p176087,Sikander Ali,6,10,5
+p176094,Rida Fatima,A,A,6
+p176102,Basharat Hussain,A,A,6
+p176103,Lal Ahsan,A,A,6
+p176106,Umar Nawaz,6,10,6
+p176110,Mutahir Hussain,6,10,5
+p176113,Ahmad Tariq,A,A,6
+p176115,AbbasIshfaqBabar,2,3.3,6
+p176117,Muhammad Sarmad,A,A,A
+p176119,Ammad Amir,6,10,6
+p176123,Raveeha Amjad,6,10,4
+p176124,Asjid Ahmed,6,10,3
+p176129,Muhammad Bilal,A,A,6
+p176131,Bilal Elahi,6,10,6
+p176136,Ahmad Khan,6,10,6
+p176139,Kamran Khan,A,A,5
+p176140,Daies Ul,4,6.7,4
+p176144,Hafeez Ullah,6,10,5
+p176145,Rahat Ali,6,10,5
+p176147,Muhammad Suleman,6,10,5
+p176155,Muhammad Hamza Rehman,A,A,6
+p176156,Muhammad Nouman,A,A,6
+p176160,Muhammad Abubakar,A,A,6
+p176161,Meer Murtaza,6,10,6
+p176162,Hammad Hassan,6,10,5
+p176171,Abubakar Javed,A,A,6
+p176172,Ali Raza,2,3.3,6
+p176420,Saad Rehman,A,A,A
