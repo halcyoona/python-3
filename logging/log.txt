@@ -1,0 +1,66 @@
+Logging
+
+
+DEBUG: 
+Detailed information, typically of interest only when diagnosing problems.
+
+
+INFO:
+Confirmation that things are working as expected.
+
+
+WARN:
+An indication that something unexpected happened, or indicative of some problem in the near future (e.g. ‘disk space low’). The software is still working as expected.
+
+
+ERROR:
+Due to a more serious problem, the software has not been able to perform some function.
+
+
+
+
+Logging to a file
+A very common situation is that of recording logging events in a file, so let’s look at that next.
+
+import logging
+logging.basicConfig(filename='example.log',level=logging.DEBUG)
+logging.debug('This message should go to the log file')
+logging.info('So should this')
+logging.warning('And this, too')
+
+
+And now if we open the file and look at what we have, we should find the log messages:
+
+DEBUG:root:This message should go to the log file
+INFO:root:So should this
+WARNING:root:And this, too
+
+
+
+Changing the format of displayed messages
+To change the format which is used to display messages, you need to specify the format you want to use:
+
+import logging
+logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.DEBUG)
+logging.debug('This message should appear on the console')
+logging.info('So should this')
+logging.warning('And this, too')
+
+
+which would print:
+
+DEBUG:This message should appear on the console
+INFO:So should this
+WARNING:And this, too
+
+
+Advance logging
+
+The logging library takes a modular approach and offers several categories of components: loggers, handlers, filters, and formatters.
+
+Loggers: expose the interface that application code directly uses.
+Handlers: send the log records (created by loggers) to the appropriate destination.
+Filters: provide a finer grained facility for determining which log records to output.
+Formatters: specify the layout of log records in the final output.
+
+To be continued
