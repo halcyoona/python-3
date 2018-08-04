@@ -10,7 +10,7 @@ def test_div_2():
 
 
 def test_div_for_float():
-	assert div(1, 2) == 0.5
+	assert div(2, 2) == 1
 
 
 def test_srt():
@@ -20,4 +20,18 @@ def test_srt():
 	l = [0,2,3,15,16,21,24,25]
 
 	assert sortlist(lst) == l
+
+
+
+
+from basicmath import openfile
+
+def test_open():
+	filename = "missing-file.txt"
+	try:
+		openfile(filename)
+		raise AssertionError("Expected exception is not thrown")
+
+	except FileNotFoundError:
+		pass
 

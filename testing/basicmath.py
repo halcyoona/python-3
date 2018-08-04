@@ -13,3 +13,15 @@ def sortlist(lst):
 				alist[i] = alist[i+1]
 				alist[i+1] = temp
 	return alist
+
+
+import os
+
+def openfile(filename):
+	# if not os.path.exists(filename):
+	# 	return 
+
+	
+
+#openfile(filename)
+		
