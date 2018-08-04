@@ -19,9 +19,7 @@ import os
 
 def openfile(filename):
 	# if not os.path.exists(filename):
-	# 	return 
-
+	#  	return 
 	
-
-#openfile(filename)
+	open(filename)
 		
