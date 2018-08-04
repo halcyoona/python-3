@@ -1,0 +1,14 @@
+Debugger for python
+
+pycharm
+
+
+command line debugger for python
+pudb
+
+
+example:
+pudb filename.py
+
+
+
