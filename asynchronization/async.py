@@ -50,7 +50,7 @@ loop.run_until_complete(asyncio.wait(tasks))
 
 
 
-loop.close
+loop.close()
 
 
-tasks[0].result    #After the loop is done we can get the return values
+print(tasks[0].result())    #After the loop is done we can get the return values
