@@ -1,0 +1,127 @@
+There are several ways in which you can setup your python enviroment on linux like anaconda enviroment, python virtual enviroment, simple pip enviroment etc. 
+
+Simple pip enviroment:
+
+Python Installation:
+On linux python is installed as default python2.7.
+First you have to install python3.6 or the latest version by using ppa repository.This can be done by typing this command on terminal.
+sudo add-apt-repository ppa:jonathonf/python-3.6
+
+Then update and install the python3.6
+
+sudo apt update
+
+sudo apt install python3.6
+
+Now python3.6 is installed in your system but you have to set python3.7 as your default.You can do this by running following command.
+
+
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python2.7 1
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 2
+
+Finally switch between the two python versions for python via command:
+
+sudo update-alternatives --config python3
+
+There are 2 choices for the alternative python3 (providing /usr/bin/python3).
+
+  Selection    Path                Priority   Status
+------------------------------------------------------------
+* 0            /usr/bin/python3.6   2         auto mode
+  1            /usr/bin/python2.7   1         manual mode
+  2            /usr/bin/python3.6   2         manual mode
+
+Press <enter> to keep the current choice[*], or type selection number: 2
+
+You can check your version via command:
+python -V
+Python 3.6.6
+
+
+Pip Installation:
+
+PIP is a package manager for Python packages from the Python Package Index (PyPI).PyPI is a repository for open-source third-party Python packages. A package contains all the files you need for a module. Modules are Python code libraries you can include in your project.
+
+You can install pip via commands for your python version:
+
+sudo apt install python-pip	    #python 2
+sudo apt install python3-pip	#python 3
+
+Or
+
+You can install pip by downloading get-pip.py script and you can download it via command: 
+
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py 
+
+And Run this script (get-pip.py).
+python get-pip.py
+
+get-pip.py can also be used to install a specified combination of pip, setuptools, and wheel using the same requirements syntax as pip:
+python get-pip.py pip==9.0.2 wheel==0.30.0 setuptools==28.8.0
+
+To upgrade pip:
+
+pip install -U pip
+
+
+
+To install, uninstall or search new packages, use these commands.
+
+pip install packageName
+pip uninstall packageName
+pip search packageName
+
+To see a list of all commands type:
+man pip
+
+Virtual Enviroment:
+
+virtualenv solves a very specific problem: it allows multiple Python projects that have different requirements, to coexist on the same computer.Virtualenv creates a completely isolated virtual environment for each of your programs.An environment is simply a directory that contains a complete copy of everything needed to run a Python program,including a copy of the python binary itself, a copy of the entire Python standard library, a copy of the pip installer, and a copy of the site-packages directory mentioned above.When you install a package from PyPI using the copy of pip that's created by the virtualenv tool, it will install the package into the site-packages directory inside the virtualenv directory. You can then use it in your program just as before.
+
+Fisrt you have to install pip in your system and you can install it by following commands given above in this blog.
+The easiest way is to install virtual enviroment is using pip command:
+sudo pip install virtualenv
+
+Now virtualenviroment package is installed in your system.And You can create your own virtual enviroment.
+
+Creating enviroment:
+
+Open terminal create your virtual enviroment via command:
+cd my-env
+virtualenv env1
+
+
+Using base prefix '/usr'
+New python executable in /home/mehmood/my-env/env1/bin/python
+Installing setuptools, pip, wheel...done.
+
+cd env1
+ls
+bin  lib  pip-selfcheck.json
+
+
+Here, env is just the name of the directory you want to create your virtual environment inside. It's a common convention to call this directory env, and to put it inside your project directory.
+
+➜  ~ which python
+/home/mehmood/anaconda3/bin/python
+➜  ~ source my-env/env1/bin/activate
+(env1) ➜  ~ which python
+/home/mehmood/my-env/env1/bin/python 
+
+So now we can install any package in the enviroment using pip command.pip will install the library into the environment, instead of globally.  If you switch to work on a different project (with its own environment) you can run deactivate to stop using one environment, and then activate the other.
+
+deactivate
+
+
+virtualenv and pip make great companions, especially when you use the requirements feature of pip. Each project you work on has its own requirements.txt file, and you can use this to install the dependencies for that project into its virtual environment:
+
+env1/bin/pip install -r requirements.txt
+
+
+
+
+
+
+
+
+
