@@ -1,6 +1,6 @@
-There are several ways in which you can setup your python enviroment on linux like anaconda enviroment, python virtual enviroment, simple pip enviroment etc. 
+soThere are several ways in which you can setup your python environment on linux like anaconda environment, python virtual environment, simple pip environment etc. 
 
-Simple pip enviroment:
+Simple pip environment:
 
 Python Installation:
 On linux python is installed as default python2.7.
@@ -13,7 +13,7 @@ sudo apt update
 
 sudo apt install python3.6
 
-Now python3.6 is installed in your system but you have to set python3.7 as your default.You can do this by running following command.
+Now python3.6 is installed in your system but you have to set python3.6 as your default.You can do this by running following command.
 
 
 sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python2.7 1
@@ -74,19 +74,19 @@ pip search packageName
 To see a list of all commands type:
 man pip
 
-Virtual Enviroment:
+Virtual Environment:
 
 virtualenv solves a very specific problem: it allows multiple Python projects that have different requirements, to coexist on the same computer.Virtualenv creates a completely isolated virtual environment for each of your programs.An environment is simply a directory that contains a complete copy of everything needed to run a Python program,including a copy of the python binary itself, a copy of the entire Python standard library, a copy of the pip installer, and a copy of the site-packages directory mentioned above.When you install a package from PyPI using the copy of pip that's created by the virtualenv tool, it will install the package into the site-packages directory inside the virtualenv directory. You can then use it in your program just as before.
 
 Fisrt you have to install pip in your system and you can install it by following commands given above in this blog.
-The easiest way is to install virtual enviroment is using pip command:
+The easiest way is to install virtual environment is using pip command:
 sudo pip install virtualenv
 
-Now virtualenviroment package is installed in your system.And You can create your own virtual enviroment.
+Now virtualenvironment package is installed in your system.And You can create your own virtual environment.
 
-Creating enviroment:
+Creating environment:
 
-Open terminal create your virtual enviroment via command:
+Open terminal create your virtual environment via command:
 cd my-env
 virtualenv env1
 
@@ -108,7 +108,7 @@ Here, env is just the name of the directory you want to create your virtual envi
 (env1) ➜  ~ which python
 /home/mehmood/my-env/env1/bin/python 
 
-So now we can install any package in the enviroment using pip command.pip will install the library into the environment, instead of globally.  If you switch to work on a different project (with its own environment) you can run deactivate to stop using one environment, and then activate the other.
+So now we can install any package in the environment using pip command.pip will install the library into the environment, instead of globally.  If you switch to work on a different project (with its own environment) you can run deactivate to stop using one environment, and then activate the other.
 
 deactivate
 
@@ -118,10 +118,165 @@ virtualenv and pip make great companions, especially when you use the requiremen
 env1/bin/pip install -r requirements.txt
 
 
+Anaconda Enviroment:
+
+In this blog I am going to show the Installation process and creation of your own conda environment.So Let's start.
+
+First thing you have to do is open this page https://repo.continuum.io/archive/ select a version of anaconda that you want to install on your system.You can simply click on it to download or you can download it via command: 
+
+wget https://repo.continuum.io/archive/Anaconda3-5.2.0-Linux-x86_64.sh
+
+After downloading bash script of anaconda you can run this script via command:
+
+bash Anaconda3-5.2.0-Linux-x86_64.sh
+
+Then installation of Anaconda is started:
+
+Welcome to Anaconda3 5.2.0
+
+In order to continue the installation process, please review the license
+agreement.
+Please, press ENTER to continue
+>>> 
+
+You’ll receive the following output:
+
+Anaconda End User License Agreement
+===================================
+
+Copyright 2015, Anaconda, Inc.
+
+All rights reserved under the 3-clause BSD License:
+
+Redistribution and use in source and binary forms, with or without modification,
+ are permitted provided that the following conditions are met:
+
+  * Redistributions of source code must retain the above copyright notice, this 
+list of conditions and the following disclaimer.
+  * Redistributions in binary form must reproduce the above copyright notice, th
+is list of conditions and the following disclaimer in the documentation and/or o
+ther materials provided with the distribution.
+  * Neither the name of Anaconda, Inc. ("Anaconda, Inc.") nor the names of its c
+ontributors may be used to endorse or promote products derived from this softwar
+e without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WA
+RRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+--More--
+
+Press ENTER to continue and then press ENTER to read through the license. Once you’re done reading the license, you’ll be prompted to approve the license terms:
+
+The following packages are included in this distribution that relate to cryptogr
+aphy:
+
+openssl
+    The OpenSSL Project is a collaborative effort to develop a robust, commercia
+l-grade, full-featured, and Open Source toolkit implementing the Transport Layer
+ Security (TLS) and Secure Sockets Layer (SSL) protocols as well as a full-stren
+gth general purpose cryptography library.
+
+pycrypto
+    A collection of both secure hash functions (such as SHA256 and RIPEMD160), a
+nd various encryption algorithms (AES, DES, RSA, ElGamal, etc.).
+
+pyopenssl
+    A thin Python wrapper around (a subset of) the OpenSSL library.
+
+kerberos (krb5, non-Windows platforms)
+    A network authentication protocol designed to provide strong authentication 
+for client/server applications by using secret-key cryptography.
+
+cryptography
+    A Python library which exposes cryptographic recipes and primitives.
+
+
+Do you accept the license terms? [yes|no]
+[no] >>> 
+
+
+Type yes to install.
+
+And you will receive following output that will show you the location where anaconda is going to be installed:
+
+Anaconda3 will now be installed into this location:
+/home/mehmood/anaconda3
+
+  - Press ENTER to confirm the location
+  - Press CTRL-C to abort the installation
+  - Or specify a different location below
+
+[/home/mehmood/anaconda3] >>> 
+
+
+Press Enter to continue.Anaconda install lot of packages.
+
+Do you wish the installer to prepend the Anaconda3 install location
+to PATH in your /home/mehmood/.bashrc ? [yes|no]
+[no] >>> 
+
+It is recommended that you type yes to use the conda command.
+
+And you will receive following output:
+
+Appending source /home/mehmood/anaconda3/bin/activate to /home/mehmood/.bashrc
+A backup will be made to: /home/mehmood/.bashrc-anaconda3.bak
+
+
+For this change to become active, you have to open a new terminal.
+
+Thank you for installing Anaconda3!
+
+===========================================================================
 
 
 
+You can now activate the installation with the following command:
 
 
+source ~/.bashrc
+
+For checking anacodna is installed or not type this command:
+
+conda list
+
+It shows the list of packages installed in the anaconda environment.
+
+For updating anaconda:
+conda update conda
+
+Once the update of conda is complete, you can update the Anaconda distribution:
+
+conda update anaconda
+
+craeting conda environment:
+
+Let’s create an environment using the most recent version of Python 3. We can achieve this by assigning version 3 to the python argument.You can use more specific version of python as your need create your environment.To check which python versions are available you can check via command:
+
+conda search "^python$"
+
+For creating environment:
+conda create --name my-env python=3
+
+To activating your environment via command:
+source activate my-env
+
+To update any specific package in a environment:
+conda update python
+
+When you’re ready to deactivate your Anaconda environment, you can do so by typing:
+source deactivate
+
+You can inspect all of the environments you have set up with this command:
+conda info --envs
+
+Uninstalling Anaconda:
+
+For uninstalling anaconda you will need to install the package anaconda-clean.
+
+conda install anaconda-clean
 
 
+Once it is installed, you can run the following command.
+
+anaconda-clean
