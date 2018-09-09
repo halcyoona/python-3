@@ -23,6 +23,8 @@ Finally switch between the two python versions for python via command:
 
 sudo update-alternatives --config python3
 
+Following output come on your screen: 
+
 There are 2 choices for the alternative python3 (providing /usr/bin/python3).
 
   Selection    Path                Priority   Status
@@ -90,17 +92,19 @@ Open terminal create your virtual environment via command:
 cd my-env
 virtualenv env1
 
+Following output will be shown on screen.
 
 Using base prefix '/usr'
 New python executable in /home/mehmood/my-env/env1/bin/python
 Installing setuptools, pip, wheel...done.
+
+Here, env1 is just the name of the directory you want to create your virtual environment inside. It's a common convention to call this directory env, and to put it inside your project directory.
 
 cd env1
 ls
 bin  lib  pip-selfcheck.json
 
 
-Here, env is just the name of the directory you want to create your virtual environment inside. It's a common convention to call this directory env, and to put it inside your project directory.
 
 ➜  ~ which python
 /home/mehmood/anaconda3/bin/python
